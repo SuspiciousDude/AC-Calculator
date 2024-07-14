@@ -1,0 +1,12 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #111;
+  padding: 0.8em;
+  width: 20%;
+  gap: 1rem;
+}
+
+.units{
+  display: flex;
+}
