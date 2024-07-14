@@ -25,7 +25,7 @@ const Dropdown = ({unit, defaultValue, value1, value2, setUnit}) => {
   return (
     <DropdownMenu >
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="w-12" onClick={() => setValue(defaultValue)} >{defaultValue || <ChevronDown />}</Button>
+        <Button variant="outline" className="w-12" onClick={() => setValue(defaultValue)} >{defaultValue || value || <ChevronDown />}</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel>{unit}</DropdownMenuLabel>
