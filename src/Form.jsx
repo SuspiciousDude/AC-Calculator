@@ -29,11 +29,11 @@ const Form = ({frequency, frequencyUnit, voltage, voltageUnit, resistance, resis
 
             <div className="units mx-2">
                 <Input type="number" placeholder="Frequency" className="mx-2" value={frequency} onChange={(e) => setFrequency(e.target.value)} />
-                <Dropdown unit="Frequency" value1="Hz" />
+                <Dropdown unit="Frequency" defaultValue="Hz" />
             </div>
             <div className="units mx-2">
                 <Input type="number" placeholder="Voltage" className="mx-2" value={voltage} onChange={(e) => setVoltage(e.target.value)} />
-                <Dropdown unit="Voltage" value1="V" />
+                <Dropdown unit="Voltage" defaultValue="V" />
             </div>
             <div className="units mx-2">
                 <Input type="number" placeholder="Resistance" className="mx-2" value={resistance} onChange={(e) => setResistance(e.target.value)} />

@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const Dropdown = ({unit, value1, value2, setUnit}) => {
+const Dropdown = ({unit, defaultValue, value1, value2, setUnit}) => {
   const [value, setValue] = useState('');
 
   const handleChange = (newValue) => {
@@ -25,13 +25,13 @@ const Dropdown = ({unit, value1, value2, setUnit}) => {
   return (
     <DropdownMenu >
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="w-12" >{value || <ChevronDown />}</Button>
+        <Button variant="outline" className="w-12" onClick={() => setValue(defaultValue)} >{defaultValue || <ChevronDown />}</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel>{unit}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={value} onValueChange={handleChange}>
-          <DropdownMenuRadioItem value={value1}>{value1}</DropdownMenuRadioItem>
+          {value1 ? <DropdownMenuRadioItem value={value1}>{value1}</DropdownMenuRadioItem> : null}
           {value2 ? <DropdownMenuRadioItem value={value2}>{value2}</DropdownMenuRadioItem> : null}
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
