@@ -12,3 +12,5 @@
 - The website with its seamless and Mobile-Friendly UI targets to achieve the best experience for those students.
 - The vision is to make it the go-to site for these little but necessary calculations.
 
+## Images/Demo
+![netlify_2024-7-14T21-44-1](https://github.com/user-attachments/assets/58e961b5-147c-4f8d-acee-90f8b329bd7e)
